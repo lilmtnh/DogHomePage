@@ -104,11 +104,31 @@ div {
     position: relative;
     color: white;
     text-align: center;
+    padding: 2%;
 }
 #number {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    
-    margin: 10%;
+    justify-content: space-around; 
+    margin: 5%;
+}
+.data {
+    font-size: 300%;
+}
+
+
+#service {
+    display: flex;
+
+}
+#services h2, h3 {
+    color: black;
+}
+#services p {
+    color: gray;
+}
+#right {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
 }
