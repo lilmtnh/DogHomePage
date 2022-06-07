@@ -25,17 +25,21 @@ h2 {
     margin: 0 auto;
 }
 
+#what-we-do {
+    padding: 100px;
+    padding-top: 0;
+    text-align: center;
+}
 #activities {
     display: flex;
     flex-wrap: wrap;
 }
+#what-we-do .item {
+    width: 25%;
+}
 h5 {
     text-align: center;
     color: black;
-}
-.item {
-    padding: 2%;
-    width: 25%;
 }
 .dog {
     display: block;
@@ -117,9 +121,10 @@ div {
 }
 
 
-#service {
-    display: flex;
-
+#services {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 80px;
 }
 #services h2, h3 {
     color: black;
@@ -131,4 +136,95 @@ div {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
+    justify-content: space-around;
+    align-content: center;
+}
+#services .item {
+    width: 80%;
+}
+#services .item {
+    transition: all 0.5s;
+    margin-right: 2%;
+    margin-bottom: 3%;
+    padding: 10px;
+    float: left;
+    text-align: center;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 7px 7px 10px 0 rgb(76 110 245 / 10%);
+}
+#services .item i {
+    color: orange;
+    font-size: 30px;
+}
+
+#testimonials {
+    background-image: url(./img/bg.jpg);
+    background-size: cover;
+    color: #fff;  
+}
+#testiBox {
+    display: flex;
+    margin: 0 10%;
+    justify-content: space-around;
+}
+#testiBox .item {
+    text-align: center;
+    justify-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+}
+#testiBox img {
+    border-radius: 50%;
+}
+#testiBox p {
+    color:#fff;
+}
+#testiBox h3 {
+    color: #ff9900;
+}
+
+#ourBlog {
+    padding: 100px;
+}
+.ourBlog {
+    display: flex;
+    justify-content: space-around;
+}
+.blog-item {
+    width: 30%;
+}
+.blog-item img {
+    width: 100%;
+}
+.blog-item .bottom {
+    margin-top: -7px;
+    padding: 16px;
+    border-radius: 1%;
+    border: solid 1px rgb(219, 219, 219);
+}
+.blog-item p {
+    color: gray;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.blog-item .more {
+    color: #ff9900;
+    font-weight: 700;
+}
+.blog-item:last-child {
+    padding: 20px;
+    border: solid 1px rgb(219, 219, 219);
+    box-shadow: 0px 3px 10px 1px rgb(45 45 45 / 8%);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.blog-item .itemDate {
+    color: #ff9900;
 }
